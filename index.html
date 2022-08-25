@@ -1,34 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="css/index-style.css">
     <link rel="stylesheet" href="css/base-style.css">
+    <script src="https://kit.fontawesome.com/bf4c53a5dd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <a href="">
+        <a href="index.html">
             <h2>Home</h2>
         </a>
         <nav>
             <ul>
-                <li><a href="git.html">Controle de versão</a></li>
-                <li><a href="testes.html">Testes</a></li>
-                <li><a href="flask.html">Flask</a></li>
+                <li><a href="git.html"><i class="fa-brands fa-git-alt"></i>Git e Github</a></li>
+                <li><a href="testes.html"><i class="fa-solid fa-list-check"></i>Testes</a></li>
+                <li><a href="flask.html"><i class="fa-solid fa-globe"></i>Flask</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
+        <div class="card">
+            <div class="center column">
+                <h2>Git e Github</h2>
+                <p>Os programas mais utilizados para o uso de controle de versão</p>
+                <a href="git.html">Acessar</a>
+            </div>
+            <div class="center row">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/640px-Git-logo.svg.png"
+                    alt="logo git">
+                <img src="https://pt.wizcase.com/wp-content/uploads/2022/03/GitHub-Logo.png" alt="logo github">
+            </div>
+        </div>
+        <div class="card">
+            <div class="center column">
+                <h2>Testes</h2>
+                <p>Fazer testes é importante para o desenvolvimento do programa,
+                    a tecnica TDD é a mais indicada para a realização de um programa seguro e escalável,
+                    e com a biblioteca pytest para a realização de teste na linguagem python
+                </p>
+                <a href="testes.html">Acessar</a>
+            </div>
+            <div class="center row">
+                <img src="https://programonaut.b-cdn.net/wp-content/uploads/2021/08/TDD.png" alt="logo tdd">
+                <img src="https://warehouse-camo.ingress.cmh1.psfhosted.org/1599e7e4caeaac6ca1a8d4ace3cefa8a0d160925/68747470733a2f2f6769746875622e636f6d2f7079746573742d6465762f7079746573742f7261772f6d61696e2f646f632f656e2f696d672f7079746573745f6c6f676f5f6375727665732e737667"
+                    alt="logo pytest">
+            </div>
+        </div>
+        <div class="card">
+            <div class="center column">
+                <h2>Flask</h2>
+                <p>Micro framework web python, bom para pequenos projetos</p>
+                <a href="flask.html">Acessar</a>
+            </div>
+            <div class="center row">
+                <img src="https://play-lh.googleusercontent.com/keVVojxW-b11NTKWZg8GulfLlhqBpATvqGFViblYsI0fxW_8a0sIPgyRlB94Gu1AQMY"
+                    alt="logo flask">
+            </div>
+        </div>
     </main>
-    <footer>
-        <h4>Feito por:</h4>
-        <h4>Lenner e Luiz</h4>
-    </footer>
 </body>
 
 </html>

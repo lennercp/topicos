@@ -1,0 +1,33 @@
+img {
+    width: 20%;
+}
+
+.card {
+    margin: 0 auto 30px;
+    width: 60%;
+    border-top: 1px solid gray;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.center a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.center a:hover {
+    color: #7700ff;
+}
