@@ -9,6 +9,10 @@ html {
     min-height: 100%;
 }
 
+body {
+    background-color: #E8E8E8
+}
+
 :root {
     --padding: 0 5vw
 }
@@ -48,5 +52,4 @@ main {
     width: 100%;
     height: fit-content;
     padding: 30px 5vw;
-    background-color: #E8E8E8;
 }
