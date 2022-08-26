@@ -1,34 +1,146 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TDD e Pytest</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/git-style.css"/>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testes</title>
-    <link rel="stylesheet" href="css/base-style.css">
-</head>
+  </head>
+  <body>
+    <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">HOME</a>
+      <a href="#advantages" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">VANTAGENS</a>
+      <a href="#resumo" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUMO</a>
+      <a href="#sobre" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">INTRODUÇÃO</a>
+    </div>   
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="content-container w3-margin-top-2">
+          <!--INICIO SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"Not even the towel you use was untested"</p>
+            <h1> TDD e Pytest</h2>
+            <h2>Técnicas de Teste de Software</h3>
+            <p></p>
+          </div>
 
-<body>
-    <header>
-        <a href="index.html">
-            <h2>Home</h2>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="git.html">Git e Github</a></li>
-                <li><a href="testes.html">Testes</a></li>
-                <li><a href="flask.html">Flask</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+          <!--SOBRE SECTION-->
+          <div id="sobre" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">INTRODUÇÃO</h2>
+            <p class="w3-margin-top-2"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nam porttitor sollicitudin efficitur. 
+                Integer posuere odio vel ullamcorper euismod. 
+                Aliquam sit amet nulla tortor. 
+                Integer vehicula nunc et condimentum feugiat. 
+                Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+            </p>
+            <p class=""> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nam porttitor sollicitudin efficitur. 
+                Integer posuere odio vel ullamcorper euismod. 
+                Aliquam sit amet nulla tortor. 
+                Integer vehicula nunc et condimentum feugiat. 
+                Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+            </p>
+            <p class=""> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nam porttitor sollicitudin efficitur. 
+                Integer posuere odio vel ullamcorper euismod. 
+                Aliquam sit amet nulla tortor. 
+                Integer vehicula nunc et condimentum feugiat. 
+                Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+            </p>
+          </div>
 
-    </main>
-    <footer>
-        <h4>Feito por:</h4>
-        <h4>Lenner e Luiz</h4>
-    </footer>
-</body>
+          <!--RESUMO-->
+          <div id="resumo" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUMO</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
 
+                <p class=""> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nam porttitor sollicitudin efficitur. 
+                    Integer posuere odio vel ullamcorper euismod. 
+                    Aliquam sit amet nulla tortor. 
+                    Integer vehicula nunc et condimentum feugiat. 
+                    Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+                  </p>
+
+            <p class=""> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nam porttitor sollicitudin efficitur. 
+                Integer posuere odio vel ullamcorper euismod. 
+                Aliquam sit amet nulla tortor. 
+                Integer vehicula nunc et condimentum feugiat. 
+                Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+              <br>
+
+              </p>
+
+            <p class=""> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Nam porttitor sollicitudin efficitur. 
+               Integer posuere odio vel ullamcorper euismod. 
+               Aliquam sit amet nulla tortor. 
+               Integer vehicula nunc et condimentum feugiat. 
+               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+              </p>
+
+
+            <p class=""> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Nam porttitor sollicitudin efficitur. 
+               Integer posuere odio vel ullamcorper euismod. 
+               Aliquam sit amet nulla tortor. 
+               Integer vehicula nunc et condimentum feugiat. 
+               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+              </p>
+
+            <p class=""> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Nam porttitor sollicitudin efficitur. 
+              Integer posuere odio vel ullamcorper euismod. 
+              Aliquam sit amet nulla tortor. 
+              Integer vehicula nunc et condimentum feugiat. 
+              Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+            </p>
+
+
+            <p class=""> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nam porttitor sollicitudin efficitur. 
+                Integer posuere odio vel ullamcorper euismod. 
+                Aliquam sit amet nulla tortor. 
+                Integer vehicula nunc et condimentum feugiat. 
+                Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+            </p>
+
+          <!--ADVANTAGES SECTION-->
+          <div id="advantages" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">VANTAGENS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+                <p class=""> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Nam porttitor sollicitudin efficitur. 
+               Integer posuere odio vel ullamcorper euismod. 
+               Aliquam sit amet nulla tortor. 
+               Integer vehicula nunc et condimentum feugiat. 
+               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+                </p>
+            </div>
+          </div>
+
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+           <p class="w3-large">Feito por: Luiz Fernando e Lenner Coutinho</p> 
+        </footer>
+
+      </section>      
+    </section>
+  </body>
 </html>
