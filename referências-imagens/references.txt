@@ -1,0 +1,9 @@
+Imagem sobre o funcionamento do Git:
+https://git-scm.com/book/pt-pt/v2/Come%C3%A7ando-O-B%C3%A1sico-do-Git
+
+
+Imagem sobre o fluxo de trabalho Git:
+https://edrodrigues.com.br/blog/conceitos-git-e-fluxo-de-trabalho-para-iniciantes/
+
+Imagem sobre o fluxo do Github:
+https://blog.dankicode.com/introducao-ao-git-e-github/
