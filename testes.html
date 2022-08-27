@@ -9,13 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/git-style.css"/>
+    <style>
+      pre{
+           background-color: #D8D8D8; 
+           padding: 1rem
+      }
+  </style>
 
   </head>
   <body>
     <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
       <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">HOME</a>
-      <a href="#advantages" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">VANTAGENS</a>
-      <a href="#resumo" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUMO</a>
+      <a href="#advantages" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONCLUSÃO</a>
+      <a href="#resumo" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">DEFINIÇÕES</a>
       <a href="#sobre" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">INTRODUÇÃO</a>
     </div>   
       <section class="w3-threequarter w3-padding-large w3-right">
@@ -33,106 +39,124 @@
           <div id="sobre" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
             <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">INTRODUÇÃO</h2>
             <p class="w3-margin-top-2"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nam porttitor sollicitudin efficitur. 
-                Integer posuere odio vel ullamcorper euismod. 
-                Aliquam sit amet nulla tortor. 
-                Integer vehicula nunc et condimentum feugiat. 
-                Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+               A palavra "teste" é algo que se ouve muito nos dias atuais, mesmo fora da área de desenvolvimento de software.
+               Todos nós, de algum jeito, fazemos ou passamos por algum tipo de teste em nossas vidas. Quando fazemos uma 
+               prova, nosso aprendizado está sendo testado por um professor; Quando experimentamos uma roupa, estamos 
+               "testando" se ela serve em nós, e se irá combinar com a ocasião que queremos, e por aí em diante.
             </p>
+            
             <p class=""> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nam porttitor sollicitudin efficitur. 
-                Integer posuere odio vel ullamcorper euismod. 
-                Aliquam sit amet nulla tortor. 
-                Integer vehicula nunc et condimentum feugiat. 
-                Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+                Que os testes estão presentes em nosso cotidiano todos nós sabemos, mas, e quanto aos testes no contexto
+                do desenvolvimento de software? Para quem desenvolve, sabe que eles são uma parte crucial para absolutamente
+                qualquer projeto bem sucedido, e para quem não desenvolve, ou ainda não desenvolve, vamos apresentar a seguir
+                uma das principais técnicas de teste de software, a fim de mostrar a importância dessa etapa do desenvolvimento.
             </p>
-            <p class=""> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nam porttitor sollicitudin efficitur. 
-                Integer posuere odio vel ullamcorper euismod. 
-                Aliquam sit amet nulla tortor. 
-                Integer vehicula nunc et condimentum feugiat. 
-                Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
-            </p>
+
           </div>
 
           <!--RESUMO-->
           <div id="resumo" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUMO</h2>
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">DEFINIÇÕES</h2>
             <div class="w3-container w3-margin-top-2 w3-cursive">
 
                 <p class=""> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam porttitor sollicitudin efficitur. 
-                    Integer posuere odio vel ullamcorper euismod. 
-                    Aliquam sit amet nulla tortor. 
-                    Integer vehicula nunc et condimentum feugiat. 
-                    Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+                   Primeiro, é importante que se diga algo muito importante sobre os testes: Há um grande conflito de 
+                   interesses envolvido nele. Mas por que isso? Isso se deve ao fato de que quem testa o software é quem
+                   o desenvolve, e por isso, quem testa o faz pensando em provar que o seu software funciona, e não 
+                   em detectar os erros que ele possa ter, o que faz com que o cliente muitas vezes seja quem encontra
+                   os erros ao usar esse software. É importante que se diga que há muitos tipos de teste: Testes de Validação
+                   de entrada, testes de desempenho, testes de implantação, testes de aceitação, testes de recuperação,
+                   testes de segurança, entre muitos outros. Nesse contexto, realizar estes testes sem a mentalidade certa,
+                   sem organização ou de maneira errônea pode acarretar em prejuízos enormes para o bom desenvolvimento e 
+                   manutenção deste software, e é aí que entra a técnica TDD.
                   </p>
 
             <p class=""> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nam porttitor sollicitudin efficitur. 
-                Integer posuere odio vel ullamcorper euismod. 
-                Aliquam sit amet nulla tortor. 
-                Integer vehicula nunc et condimentum feugiat. 
-                Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+                Do inglês "Test-driven Development"(Desenvolvimento guiado por testes), a TDD é uma técnica estabelecida para
+                entregar, com mais rapidez e sustentabilidade, um software de maior qualidade e feito mais organizadamente.
+                Esta técnica se baseia em uma ideia simples: escrever os casos de teste antes de escrever o programa em si. 
+                Pode-se dizer que ela se trata na verdade de uma técnica de projeto, fundamentada no uso de pequenos 
+                testes para projetar o sistema de forma emergente e obter algum valor rápido enquanto criamos um software 
+                de confiança. E no contexto do desenvolvimento na linguagem Python, temos uma poderosa biblioteca para nos 
+                auxiliar na realização desses testes e no desenvolvimento usando a técnica TDD, a biblioteca Pytest.
+
+              </p>
+
               <br>
 
-              </p>
-
             <p class=""> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-               Nam porttitor sollicitudin efficitur. 
-               Integer posuere odio vel ullamcorper euismod. 
-               Aliquam sit amet nulla tortor. 
-               Integer vehicula nunc et condimentum feugiat. 
-               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+                Para instalar a biblioteca pytest, basta rodar o seguinte comando:
+                <pre><code>pip install -U pytest</code></pre>
               </p>
 
 
             <p class=""> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-               Nam porttitor sollicitudin efficitur. 
-               Integer posuere odio vel ullamcorper euismod. 
-               Aliquam sit amet nulla tortor. 
-               Integer vehicula nunc et condimentum feugiat. 
-               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+              Exemplo de código usando a biblioteca pytest:
+              <pre>
+                def soma_lista(lista):
+                  if type(lista) is list:
+                    if len(lista) == 0:
+                      return "Lista Vazia"
+                    else:
+                    soma = sum(lista)
+                    return soma
+                  else:
+                    return "Erro! Apenas listas são permitidas"
+
+
+                def test_somar_lista_3_valores():
+                  assert soma_lista([2,3,4]) == 9
+
+                def test_somar_lista_1_valor():
+                  assert soma_lista([2]) == 2
+
+                def test_somar_lista_0_valor():
+                  assert soma_lista([]) == 'Lista Vazia'
+
+                def test_somar_sem_ser_lista():
+                  assert soma_lista(2) == 'Erro! Apenas listas são permitidas'</pre>
+                    <h4>assert</h4>
+                    <p>A palavra assert significa "assegurar". Se trata de uma função 
+                      reservada da biblioteca pytest que retorna sucesso apenas quando 
+                      assegura que uma determinada operação é bem sucedida para todos
+                      os dados valores.
+                    </p>
               </p>
 
             <p class=""> 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Nam porttitor sollicitudin efficitur. 
-              Integer posuere odio vel ullamcorper euismod. 
-              Aliquam sit amet nulla tortor. 
-              Integer vehicula nunc et condimentum feugiat. 
-              Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+              Nesse exemplo, este código python possui a função soma_lista, que recebe uma lista e 
+              retorna a soma dos valores desta lista; Se a lista for vazia, ele retorna a mensagem 
+              "Lista Vazia"; E se o objeto informado não for uma lista, ele retorna uma mensagem de erro.
+              O pytest usa a palavra reservada test para as funções que serão usadas para testar 
+              o código, logo todas as funções abaixo que começam com ela são as funções que o pytest
+              irá utilizar nos testes. No caso desse exemplo, existem quatro funções: A primeira 
+              testa se a soma de três valores(neste exemplo sendo 2, 3 e 4) terá sempre o mesmo 
+              resultado; Na segunda, ele testa a mesma coisa para apenas um valor; Na terceira, ele 
+              testa se a funcionalidade de retorno da mensagem no caso da lista vazia está funcionando
+              nos casos em que um valor não é informado; E por último, ele testa se a mensagem de erro
+              para o caso do objeto passado não ser uma lista está funcionando corretamente.
             </p>
 
 
             <p class=""> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nam porttitor sollicitudin efficitur. 
-                Integer posuere odio vel ullamcorper euismod. 
-                Aliquam sit amet nulla tortor. 
-                Integer vehicula nunc et condimentum feugiat. 
-                Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+              Para fazer os testes, basta rodar no terminal o comando:
+              <pre><code>$pytest</code></pre>
+              <p>E após isso será retornado a porcentagem de sucesso nos testes do programa</p>
             </p>
 
           <!--ADVANTAGES SECTION-->
           <div id="advantages" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">VANTAGENS</h3>
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONCLUSÃO</h3>
             <div class="w3-margin-top-2" style="font-weight: 500;">
                 <p class=""> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-               Nam porttitor sollicitudin efficitur. 
-               Integer posuere odio vel ullamcorper euismod. 
-               Aliquam sit amet nulla tortor. 
-               Integer vehicula nunc et condimentum feugiat. 
-               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+                  Com isso, concluímos a explanação sobre testes, esperando que tenha ficado 
+                  suficientemente claro a importância dos mesmos para o desenvolvimento de 
+                  software. Isto foi apenas um pequeno exemplo de como o pytest funciona, para 
+                  saber mais, basta acessar a sua <a href="https://docs.pytest.org/en/7.1.x/">documentação</a>
                 </p>
+                <p>Referências: </p>
+                <a href="https://www.infoq.com/br/articles/test-driven-design-java/#:~:text=Desenvolvimento%20guiado%20por%20testes%20(TDD,criar%20o%20c%C3%B3digo%20de%20produ%C3%A7%C3%A3o.">
+                  https://www.infoq.com/br/articles/test-driven-design-java/#:~:text=Desenvolvimento%20guiado%20por%20testes%20(TDD,criar%20o%20c%C3%B3digo%20de%20produ%C3%A7%C3%A3o.</a>
             </div>
           </div>
 
