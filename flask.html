@@ -1,31 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flask</title>
-    <link rel="stylesheet" href="css/base-style.css">
-</head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/git-style.css"/>
+    <style>
+        pre{
+             background-color: #D8D8D8; 
+             padding: 1rem
+        }
+    </style>
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">INÍCIO</a>
+      <a href="#conclusao" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONCLUSAO</a>
+      <a href="#primeiros_passos" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PRIMEIROS PASSOS</a>
+      <a href="#introducao" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">INTRODUÇÃO</a>
+    </div>   
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="content-container w3-margin-top-2">
+          <!--INICIO SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <h1>Flask</h2>
+            <h2>Micro framework web</h3>
+            <p>"Web development, one drop at a time"</p>
+          </div>
 
-<body>
-    <header>
-        <a href="index.html">
-            <h2>Home</h2>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="git.html">Git e Github</a></li>
-                <li><a href="testes.html">Testes</a></li>
-                <li><a href="flask.html">Flask</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+          <!--INTRODUÇÃO SECTION-->
+          <div id="introducao" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">INTRODUÇÃO</h2>
+            <p class="w3-margin-top-2"> 
+                O desenvolvimento de um site pode ser bem cansativo, principalmente sem o uso de frameworks. Mas quando o seu projeto é pequeno,
+                e está utilizando frameworks, toma-se muito tempo configurando pacotes, banco de dados, entre outros. Esses que no seu projeto nem irá utilizar,
+                com essa intenção que foi criado o Flask, um micro-framework web python que com quase 0 configuração consegue colocar um site no ar.
+            </p>
+            
+          </div>
 
-    </main>
-    
-</body>
+          <!--PRIMEIROS PASSOS-->
+          <div id="primeiros_passos" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PRIMEIROS PASSOS</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+                <p>Para inicar o uso do flask deve importar-lo utilizando o comando </p>
+                <pre><code>pip install flask</code></pre> 
+                <p>Exemplo de codigo Flask:</p>
+                <pre>
+from flask import Flask
+app = Flask(__name__)
 
+@app.route("/")
+def index():
+    return 'Hello World!'
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)</pre>
+                <h4>@app.route</h4>
+                <p>É um decorador, que recebe um parâmetro sendo uma string, que será a url 
+                    e quando for acessada vai rodar a função que estará logo abaixo. 
+                    No caso acima quando for acessada a url "/"", que é a url da pagina inicial, vai mostrar na tela a mensagem "Hello World!"</p>
+                <p>Outro exemplo de codigo</p>
+                <pre>
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return 'Hello World!'
+
+@app.route('/adulto/&ltidade>')
+def idade(idade):
+    return render_template('idade.html', idade=idade)
+                </pre>
+                <ul>
+                    <li><b>&ltname></b> é como se passa parâmetro na url, então se acessar a url idade/18, o '18 vai ser passado para a função abaixo. 
+                        Obs: pode ser qualquer palavra dentro de &lt></li>
+                    <li><b>render_template</b> é a função do Flask para renderizar um template, template é uma página html com alguns "poderes".
+                        A função recebe como primeiro parâmetro o nome do template, sendo que deve estar dentro de uma pasta chamada templates, e para enviar dados para
+                        do template coloca o nome da variavel e o dado, que no caso acima fica o idade=idade. </li>
+                </ul>
+                <p>idade.html</p>
+                <pre>
+&lt!doctype html>
+&lttitle>Você é adulto&lt/title>
+{% if int(idade) >= 18%}
+    &lth1>Você é adulto e tem {{ idade }} anos!&lt/h1>
+{% else %}
+    &lth1>Você não é adulto!&lt/h1>
+{% endif %}  
+                </pre>
+                <ul>
+                    <li>
+                        <b>{% %}</b> é a forma como se usa lógica dentro dos templates
+                    </li>
+                    <li>
+                        <b>{{ }}</b> é a forma como se pega parametros que foram passados para dentro do template, no caso a idade
+                    </li>
+                </ul>
+                 
+          <!--ADVANTAGES SECTION-->
+          <div id="conclusao" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONCLUSÃO</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+                <p> 
+                    Esse é só uma parte mínima do que o Flask pode fazer, para saber mais acesse a sua <a href="https://flask.palletsprojects.com/en/2.2.x/">documentação</a>    
+                </p>
+            </div>
+          </div>
+
+
+      </section>      
+    </section>
+  </body>
 </html>

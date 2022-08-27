@@ -1,0 +1,79 @@
+/*General*/
+body * {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: bold;
+  }
+  
+  ul li {
+    border: none !important;
+  }
+  
+    /*Containers*/
+    
+    .content-container {
+      margin: 0 auto;
+      text-align: left;
+    }
+    
+    .home {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    .home p {
+      font-weight: bold;
+    }
+    
+    .home h1 {
+      font-size: 64px;
+    }
+    
+    .html {
+      width: 90%;
+      background-color: #04aa6d;
+    }
+    
+    .w3-ul li {
+      padding: 8px 0px;
+    }
+    
+    /*Utilities*/
+    
+    .w3-margin-top-2 {
+      margin-top: 32px;
+    }
+    
+    .w3-margin-top-4 {
+      margin-top: 64px;
+    }
+    
+    .w3-margin-top-20-percent {
+      margin-top: 20%;
+    }
+    
+    .w3-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+    
+    .w3-fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+    
+    

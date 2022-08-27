@@ -1,31 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Git e Github</title>
-    <link rel="stylesheet" href="css/base-style.css">
-</head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/git-style.css"/>
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">HOME</a>
+      <a href="#advantages" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">VANTAGENS</a>
+      <a href="#resumo" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUMO</a>
+      <a href="#sobre" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">INTRODUÇÃO</a>
+    </div>   
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="content-container w3-margin-top-2">
+          <!--INICIO SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"Where the World Builds Software"</p>
+            <h1>Git e Github</h2>
+            <h2>Softwares de Versionamento</h3>
+            <p></p>
+          </div>
 
-<body>
-    <header>
-        <a href="index.html">
-            <h2>Home</h2>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="git.html">Git e Github</a></li>
-                <li><a href="testes.html">Testes</a></li>
-                <li><a href="flask.html">Flask</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+          <!--SOBRE SECTION-->
+          <div id="sobre" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">INTRODUÇÃO</h2>
+            <p class="w3-margin-top-2"> 
+              No nosso mundo moderno, estamos constantemente criando e editando arquivos dos mais diferentes tipos.
+              Desde arquivos de texto comuns, até planilhas de trabalho e arquivos de programação de aplicações dos mais
+              variados tipos. Nesse contexto, é normal que hajam erros e várias edições desses arquivos no processo de 
+              criação e edição dos mesmos, e, portanto, surge um problema: Como controlarmos o fluxo de edição desses
+              arquivos? Como "voltarmos atrás" em nossos arquivos quando erros forem cometidos? E como salvar com 
+              integridade todos esses arquivos, evitando grandes perdas de trabalho?
+              É nesse contexto que surgem os softwares de versionamento, entre os quais se destacam o Git e o Github.
+            </p>
+            <p class=""> 
+              O conceito de "versão", no âmbito do da informática, se refere às modificações, dos mais variados tipos,
+              pelas quais um arquivo passa através do tempo. Geralmente, por convenção, são atribuídos números para
+              nomear cada uma das versões que são criadas de um mesmo arquivo. Geralmente, são usados dois números
+              principais, o major e o minor, separados por um ponto, para se referir à estas versões. 
+              O maior é alterado quando se produzem grandes alterações ou saltos qualitativos no desenvolvimento 
+              e o menor varia com as alterações ou as correcções mais pequenas.
 
-    </main>
-    
-</body>
+            </p>
+            <p class=""> 
+              O Git e o Github nos permitem criar, alterar e gerenciar estas versões de arquivos, através da lógica de sistemas
+              distribuídos que permite o trabalho em conjunto com diversas pessoas e a criação de fluxos de trabalhos
+              diferentes do que são usados nos sistemas centralizados.
+            </p>
+          </div>
 
+          <!--RESUMO-->
+          <div id="resumo" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUMO</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+                <p class=""> 
+                    O Git e o Github são ferramentas quase que "complementares". Ambas funcionam de formas bem semelhantes,
+                    e diferem em, entre outros aspectos, no local onde funcionam. Uma das principais características do 
+                    git está no fato de armazenar diferenças entre os arquivos como a maioria dos 
+                    VCS(Sistemas de controle de versões) faz, são armazenados snapshots que funcionam como uma 
+                    fotografia daquele sistema de arquivos naquele momento. Ele funciona como um mini sistema de arquivos,
+                    e a maioria das operações são locais, não sendo necessária a comunicação com algum servidor a cada
+                    operação. Todos os commits possuem checksum(soma de integridade), isso garante integridade já que 
+                    antes de armazenar as informações essa soma é calculada e podem ser identificados problemas.
+                  </p>
+
+            <p class=""> 
+              Os arquivos do git estão sempre em um dos três estados:
+              
+              <ul>Consolidado (commited) - Estão
+                armazenados em sua base local</ul>
+              
+              <ul>Modificado (modified) - Arquivo sofreu
+              mudança mas não foi commitado</ul>
+              
+              <ul>Preparado (staged) - Arquivo marcado para
+              fazer parte do próximo snapshot</ul>
+              <br>
+
+              </p>
+
+              <img src="img/git-working.png" width="400" height="200">
+
+            <p class=""> 
+                Como mostrado na imagem acima, no Git existem três seções principais:
+
+                <ul>Diretório de trabalho (working directory) - É uma
+                cópia do projeto, armazenada localmente no dispositivo</ul>
+
+                <ul>Área de preparação (staging area) - É um arquivo
+                que armazena informações que irão compor o próximo commit. É
+                nessa seção que fica a versão atual do arquivo que será commitada.</ul>
+
+                <ul>Diretório git (repository) - Armazena os arquivos do
+                projeto, e é a parte utilizada para clonar um repositório
+                em outro computador</ul>
+              </p>
+
+              <img src="img/git-flow.png" width="600" height="400">
+
+            <p class=""> 
+                O fluxo de trabalho do git(git flow), ilustrado na imagem acima, é um modus operandi padrão de se trabalhar
+                com o git. Ele usa um outro conceito muito importante do git, que é o conceito de branches(ramificações).
+                As branches são caminhos alternativos ao fluxo principal de criação e edição das versões dos arquivos
+                em um repositório. Na lógica do git flow, as branches são usadas para fazer as edições nos arquivos
+                que ainda estão sendo testadas, principalmente no contexto de desenvolvimento de software em conjunto
+                com várias pessoas. Nesse contexto, cada pessoa cria uma ou várias branches para testar conteúdos 
+                adicionais a serem adicionados ao fluxo do repositório principal, e depois de esses conteúdos terem sido
+                aprovados por toda a equipe, é feito o "merge"(junção) de todas essas alterações para a branch principal
+                do repositório, que no Git é chamada de "master".
+                Por possuir todos esses recursos, o Git é um dos principais e mais populares sistemas de controle de 
+                versão do mundo, já que ele reúne eficiência, uma relativa simplicidade e uma grande versatilidade, possuindo
+                recursos que o permitem ser usado para controles de versão em projetos individuais e também coletivos, 
+                permitindo que várias pessoas trabalhem em um mesmo projeto de maneira rápida, organizada e eficiente. Mas
+                agora, afinal, o que seria o Github?
+              </p>
+
+            <p class=""> 
+              Grosso modo, podemos pensar no Github como uma versão Web da ferramenta Git. Mas como assim? O Github é um 
+              gigantesco servidor de armazenamento de repositórios Git, que permite que desenvolvedores, ou qualquer pessoa
+              que queira criar e manter as versões de seus arquivos salvas na Web para os mais diversos usos, possam armazenar
+              e, posteriormente, editar estas versões, seguindo a mesma lógica que a ferramenta Git utiliza, só que ao invés
+              de localmente, é feita na Web e, nesse caso, requer conexão com o servidor do Github e também acesso a Internet.    
+            </p>
+
+            <img src="img/github-working.png" width="400" height="200">
+
+            <p class=""> 
+              Na imagem acima, vemos como funciona a integração da ferramenta Git com o Github. O fluxo do Git acontece 
+              normalmente, mas usando o Github, podemos enviar todas as alterações feitas localmente em nossos arquivos 
+              para um repositório remoto(operação chamada de push), armazenado no próprio Github, bem como podemos também
+              copiar esses repositórios remotos para nossa máquina local e assim trabalharmos localmente com esses 
+              arquivos(operação chamada de pull). Além disso, não apenas a nossa máquina local pode fazer isso, como também
+              outras máquinas conectadas à internet e que tenham acesso ao nosso repositório remoto, e é assim que o Github
+              proporciona uma fácil integração de projetos coletivos em um único lugar, dispondo de ferramentas que fazem
+              todos esses processos de desenvolvimento e versionamento serem mais ágeis, fáceis, organizados e eficientes.
+              Inclusive, esta página de introdução ao Git e Github foi feita usando estas ferramentas, em uma colaboração dos
+              alunos do curso integrado em informática do Instituto Federal de Educação, Ciência e Tecnologia da 
+              Paraíba - Campus Cajazeiras, Luiz Fernando e Lenner Coutinho. Bem legal, não? ;) 
+            </p>
+
+          <!--ADVANTAGES SECTION-->
+          <div id="advantages" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">VANTAGENS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+                <p class=""> 
+                    Em suma, as ferramentas Git e Github são complementares pois cada uma possui uma vantagem, mas elas não 
+                    precisam serem usadas necessariamente juntas. A vantagem de se usar o Git é o fato de que não é necessário
+                    acesso a algum servidor externo para que se realizem todas as ações, o que faz estas ações serem bem mais
+                    rápidas, mas a desvantagem disso é que quaisquer problemas com os repositórios locais ou com a própria
+                    máquina local implicam em problemas com o projeto em si. 
+                    O Github, por sua vez, tem a vantagem de armazenar os repositórios e todas suas informações remotamente, e,
+                    sendo assim, não são necessárias preocupações com problemas no ambiente de trabalho local, pois mesmo que
+                    hajam problemas, o mesmo repositório pode ser acessado de qualquer outro ambiente e enviado(pull) 
+                    para um ambiente local novamente. Por outro lado, ele tem a desvantagem de precisar de conexão com um 
+                    servidor externo e com a internet, o que faz com que, no caso de quaisquer problemas com essas conexões,
+                    as ações não possam ser feitas devidamente, o que pode acarretar em percas de trabalho. Percebem? Cada 
+                    ferramenta compensa as desvantagens da outra, e, por isso, o ideal é serem usadas juntas. 
+                </p>
+            </div>
+          </div>
+
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+           <p class="w3-large">Feito por: Luiz Fernando e Lenner Coutinho</p> 
+        </footer>
+
+      </section>      
+    </section>
+  </body>
 </html>
